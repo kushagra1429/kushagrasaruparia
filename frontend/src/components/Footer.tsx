@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/kushagra"
+            href="https://github.com/kushagra1429"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-text-muted hover:text-foreground transition-colors bg-surface hover:bg-surface-hover rounded-full border border-border"
@@ -27,7 +27,7 @@ export default function Footer() {
             <GithubIcon size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/kushagra"
+            href="https://www.linkedin.com/in/kushagra-saruparia-a62966200/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-text-muted hover:text-foreground transition-colors bg-surface hover:bg-surface-hover rounded-full border border-border"
@@ -36,7 +36,7 @@ export default function Footer() {
             <LinkedinIcon size={18} />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:kushagrasaruparia14@gmail.com"
             className="p-2 text-text-muted hover:text-foreground transition-colors bg-surface hover:bg-surface-hover rounded-full border border-border"
             aria-label="Email"
           >

@@ -23,7 +23,7 @@ export default function CtaSection() {
             Let&apos;s build something <br />
             <span className="gradient-accent">ambitious.</span>
           </h2>
-          
+
           <p className="text-xl text-text-muted mb-12 max-w-2xl mx-auto text-balance">
             Whether you&apos;re looking to architect a new AI system, scale an existing product, or build a world-class digital experience, I&apos;m ready to help.
           </p>
@@ -40,14 +40,14 @@ export default function CtaSection() {
 
             <div className="flex items-center gap-4">
               <a
-                href="mailto:contact@example.com"
+                href="mailto:kushagrasaruparia14@gmail.com"
                 className="p-4 bg-surface border border-border rounded-2xl text-text-muted hover:text-foreground hover:border-accent-blue/50 transition-all hover:-translate-y-1"
                 aria-label="Email"
               >
                 <Mail size={24} />
               </a>
               <a
-                href="https://github.com/kushagra"
+                href="https://github.com/kushagra1429"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-surface border border-border rounded-2xl text-text-muted hover:text-foreground hover:border-accent-blue/50 transition-all hover:-translate-y-1"
@@ -56,7 +56,7 @@ export default function CtaSection() {
                 <GithubIcon size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/kushagra"
+                href="https://www.linkedin.com/in/kushagra-saruparia-a62966200/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-surface border border-border rounded-2xl text-text-muted hover:text-foreground hover:border-accent-blue/50 transition-all hover:-translate-y-1"
