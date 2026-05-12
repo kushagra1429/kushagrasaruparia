@@ -17,7 +17,7 @@ experiences_data = [
     ]
   },
   {
-    "company": "Freelance Software Developer",
+    "company": "BigCliq",
     "role": "Freelance Full Stack Developer",
     "duration": "Feb 2025 – July 2025",
     "description": "Delivered modern, scalable, and performance-focused digital products for multiple clients, managing projects end-to-end from architecture and deployment to optimization and delivery.",
@@ -44,31 +44,6 @@ experiences_data = [
       "Significantly enhanced application loading performance and scalability.",
       "Designed lifecycle automation workflows to improve customer engagement and retention.",
       "Worked across frontend, backend, infrastructure, and optimization layers."
-    ]
-  },
-  {
-    "company": "Terrain Recognition Research",
-    "role": "ML Research & Systems Development",
-    "duration": "2023",
-    "description": "Designed and developed a machine learning-based terrain recognition system that progressed from Smart India Hackathon participation into an internationally published Springer research paper.",
-    "technologies": ["Machine Learning", "Python", "Computer Vision", "Data Processing"],
-    "achievements": [
-      "Built ML-based terrain classification system.",
-      "Advanced from prototype stage to peer-reviewed publication.",
-      "Combined research, experimentation, and applied ML engineering.",
-      "Demonstrated ability to convert technical innovation into validated research output."
-    ]
-  },
-  {
-    "company": "Movie Recommendation Engine",
-    "role": "ML / NLP Project",
-    "duration": "2022",
-    "description": "Built an NLP-powered recommendation engine leveraging vectorization and similarity analysis to generate intelligent movie recommendations.",
-    "technologies": ["Python", "NLP", "Pandas", "NumPy", "scikit-learn", "Streamlit"],
-    "achievements": [
-      "Implemented recommendation logic using vectorization and cosine similarity.",
-      "Built end-to-end ML workflow including preprocessing and inference.",
-      "Developed interactive user-facing recommendation interface."
     ]
   }
 ]
@@ -100,32 +75,5 @@ projects_data = [
     "githubUrl": "https://github.com/kushagra1429/Movie-Recommendation-System",
     "colSpan": "md:col-span-1",
     "imagePlaceholder": "Recommendation Matrix"
-  },
-  {
-    "title": "AI/RAG Enterprise System",
-    "description": "A highly scalable retrieval-augmented generation pipeline that processes millions of documents to deliver millisecond-latency query responses for enterprise clients.",
-    "tags": ["Python", "FastAPI", "Pinecone", "LangChain"],
-    "liveUrl": "#",
-    "githubUrl": "#",
-    "colSpan": "md:col-span-2",
-    "imagePlaceholder": "AI System Architecture"
-  },
-  {
-    "title": "Modern Portfolio",
-    "description": "A cinematic, highly optimized personal portfolio showcasing engineering and design capabilities.",
-    "tags": ["Next.js", "TailwindCSS", "Framer Motion", "GSAP"],
-    "liveUrl": "#",
-    "githubUrl": "#",
-    "colSpan": "md:col-span-2",
-    "imagePlaceholder": "Portfolio Preview"
-  },
-  {
-    "title": "Analytics Dashboard",
-    "description": "Real-time data visualization platform handling thousands of concurrent events with zero perceived latency.",
-    "tags": ["React", "TypeScript", "D3.js", "WebSockets"],
-    "liveUrl": "#",
-    "githubUrl": "#",
-    "colSpan": "md:col-span-1",
-    "imagePlaceholder": "Dashboard UI"
   }
 ]

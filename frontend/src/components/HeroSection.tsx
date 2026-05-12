@@ -78,14 +78,14 @@ export default function HeroSection() {
           <div className="absolute inset-0 rounded-full border border-foreground/10 animate-[spin_60s_linear_infinite]" />
           <div className="absolute inset-4 rounded-full border border-foreground/5 animate-[spin_40s_linear_infinite_reverse]" />
           <div className="absolute inset-8 rounded-full border border-dashed border-foreground/10 animate-[spin_80s_linear_infinite]" />
-          
+
           <div className="absolute inset-12 rounded-full bg-gradient-to-tr from-accent-blue/10 to-accent-purple/10 backdrop-blur-3xl" />
-          
+
           <div className="absolute inset-12 rounded-full overflow-hidden border border-foreground/10 p-2 shadow-[0_0_80px_rgba(122,34,255,0.2)]">
             <div className="w-full h-full rounded-full bg-surface-hover/80 flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
-              <Image 
-                src="/profile.jpg"
+              <Image
+                src="/profile.png"
                 alt="Profile Picture"
                 fill
                 priority
