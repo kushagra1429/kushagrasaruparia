@@ -15,6 +15,7 @@
 
 #backend
 backend/__pycache__
+backend/api/__pycache__
 backend/.env
 backend/venv
 

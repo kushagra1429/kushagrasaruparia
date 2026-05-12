@@ -56,7 +56,7 @@ projects_data = [
     "liveUrl": "https://household-manager-87a5b.web.app/",
     "githubUrl": "https://github.com/kushagra1429/housemanager",
     "colSpan": "md:col-span-2",
-    "imagePlaceholder": "HouseManager Dashboard"
+    "imageUrl": "/api/images/housemanager.png"
   },
   {
     "title": "Terrain Recognition Research",
@@ -65,7 +65,7 @@ projects_data = [
     "liveUrl": "#",
     "githubUrl": "#",
     "colSpan": "md:col-span-1",
-    "imagePlaceholder": "Terrain ML Model"
+    "imageUrl": "/api/images/terrain.png"
   },
   {
     "title": "Movie Recommendation Engine",
@@ -74,6 +74,6 @@ projects_data = [
     "liveUrl": "#",
     "githubUrl": "https://github.com/kushagra1429/Movie-Recommendation-System",
     "colSpan": "md:col-span-1",
-    "imagePlaceholder": "Recommendation Matrix"
+    "imageUrl": "/api/images/movie.png"
   }
 ]

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type Project = {
@@ -13,7 +14,7 @@ type Project = {
   liveUrl: string;
   githubUrl: string;
   colSpan: string;
-  imagePlaceholder: string;
+  imageUrl: string;
 };
 
 const containerVariants = {
@@ -88,16 +89,22 @@ export default function ProjectsPage() {
               variants={itemVariants}
               className={`group relative rounded-3xl overflow-hidden glass-panel border border-border flex flex-col ${project.colSpan}`}
             >
-              {/* Image / Visual Placeholder Area */}
+              {/* Image / Visual Area */}
               <div className="absolute inset-0 bg-surface-hover/50 transition-colors duration-500 group-hover:bg-surface-hover z-0" />
 
               <div className="absolute inset-0 overflow-hidden z-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
-                {/* Abstract visualization placeholder */}
-                <div className="w-full h-full opacity-30 group-hover:opacity-50 transition-opacity duration-700 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
-                <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-3/4 h-1/2 border border-foreground/5 rounded-xl flex items-center justify-center text-foreground/20 font-mono text-sm group-hover:border-foreground/10 transition-colors duration-500">
-                  [{project.imagePlaceholder}]
-                </div>
+                
+                {project.imageUrl && (
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    fill
+                    unoptimized
+                    className="object-cover opacity-40 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700 mix-blend-lighten"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                )}
               </div>
 
               {/* Content */}

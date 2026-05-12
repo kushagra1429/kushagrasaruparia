@@ -1,4 +1,4 @@
-from flask import jsonify, request
+from flask import jsonify, request, send_from_directory
 from . import api_bp
 from .data import experiences_data, projects_data
 import smtplib
@@ -20,6 +20,13 @@ def get_projects():
         "status": "success",
         "data": projects_data
     })
+
+@api_bp.route('/images/<path:filename>')
+def serve_image(filename):
+    # Determine the absolute path to backend/images directory
+    backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    images_dir = os.path.join(backend_dir, 'images')
+    return send_from_directory(images_dir, filename)
 
 @api_bp.route('/contact', methods=['POST'])
 def handle_contact():
