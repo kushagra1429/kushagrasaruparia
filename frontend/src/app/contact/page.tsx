@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, ArrowRight } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from "@/components/icons";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -21,7 +21,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -78,14 +78,14 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-center gap-4 pt-4">
-              <a href="https://github.com/kushagra" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="GitHub">
+              <a href="https://github.com/kushagra1429" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="GitHub">
                 <GithubIcon size={20} />
               </a>
-              <a href="https://linkedin.com/in/kushagra" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/kushagra-saruparia-a62966200/" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="LinkedIn">
                 <LinkedinIcon size={20} />
               </a>
-              <a href="https://twitter.com/kushagra" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="Twitter">
-                <TwitterIcon size={20} />
+              <a href="https://www.instagram.com/kushagra_2909/" target="_blank" rel="noopener noreferrer" className="p-3 bg-surface hover:bg-surface-hover border border-border rounded-xl text-text-muted hover:text-foreground transition-colors" aria-label="Instagram">
+                <InstagramIcon size={20} />
               </a>
             </div>
           </div>
@@ -155,9 +155,8 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className={`w-full group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-xl transition-all overflow-hidden ${
-                status === "loading" ? "opacity-70 cursor-not-allowed" : "hover:opacity-90"
-              }`}
+              className={`w-full group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-xl transition-all overflow-hidden ${status === "loading" ? "opacity-70 cursor-not-allowed" : "hover:opacity-90"
+                }`}
             >
               {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : status === "error" ? "Failed to Send" : "Send Message"}
               {status === "idle" && <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />}
